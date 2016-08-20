@@ -1,3 +1,38 @@
 @import '_defines';
 //@import '../../node_modules/font-awesome/scss/font-awesome';
 //@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+// @blue-main:  #3067bf  ,#3067bf  ,#898989  ,#FFFFFF  ,#6D6D6D  ,#FFFFFF ,#898989  ,#EB4D5C
+$primary-color: #3067bf;
+$accent-color: #898989;
+$text-white: #FFFFFF;
+$text-blue: #3067bf;
+
+
+@import '_defines';
+//@import '../../node_modules/font-awesome/scss/font-awesome';
+//@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+.side-nav-item {
+  color: $accent-color;
+  width: 100px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.top-nav-item {
+  display: flex;
+  color: $accent-color;
+  font-size: 30px;
+  font-weight: bold;
+  height: 75px;
+  padding-top: 12px;
+  padding-left: 30px;
+  margin-bottom: 5px;
+}
+
+.nav-icon {
+  color: #000;
+  padding-right: 40px;
+}

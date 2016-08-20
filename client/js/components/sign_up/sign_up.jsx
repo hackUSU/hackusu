@@ -2,10 +2,10 @@
 
 import React                    from 'react';
 import { Parallax, Background } from 'react-parallax';
-import assets                   from '../libs/assets';
-import Navbar                   from './common/nav_bar';
+import assets                   from '../../libs/assets';
+import Navbar                   from '../common/nav_bar';
 
-export default class Home extends React.Component {
+export default class SignUp extends React.Component {
 
   render(){
 
@@ -17,4 +17,5 @@ export default class Home extends React.Component {
       </div>
     );
   }
+
 }
