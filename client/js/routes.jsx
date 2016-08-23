@@ -13,7 +13,6 @@ export default (
   <Router history={appHistory}>
     <Route path='/' component={Index}>
       <IndexRoute component={Home} />
-      <IndexRoute component={SignUp} />
     </Route>
     <Route path='/signup' component={Index}>
       <IndexRoute component={SignUp} />
