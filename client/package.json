@@ -20,10 +20,12 @@
   "license": "MIT",
   "homepage": "https://github.com/atomicjolt/react_client_starter_app",
   "dependencies": {
+    "async": "^2.0.1",
     "babel": "6.5.2",
     "babel-polyfill": "^6.9.1",
     "babel-runtime": "^6.9.2",
     "es6-promise": "^3.2.1",
+    "google-spreadsheet": "^2.0.3",
     "jquery": "^3.1.0",
     "lodash": "4.13.1",
     "materialize-css": "^0.97.7",
@@ -37,7 +39,8 @@
     "react-tap-event-plugin": "1.0.0",
     "redux": "3.5.2",
     "superagent": "2.1.0",
-    "uuid": "2.0.2"
+    "uuid": "2.0.2",
+    "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
     "autoprefixer-loader": "3.2.0",
