@@ -32,8 +32,8 @@ export default class Navbar extends React.Component {
   render(){
 
     return (
-      <div className="navbar-fixed">
-        <nav className="black" role="navigation">
+      <div className="navbar-fixed" style={{ top: '0px', position: 'absolute' }}>
+        <nav className="white" role="navigation">
           <div className="nav-wrapper container">
             <a href="#" className="brand-logo"><img src={"\." + assets('./images/logo_main.png')} alt="hackUSU" style={{ height: '55px', paddingTop: '10px' }}/></a>
             <ul className="right hide-on-med-and-down" style={{ position:'absolute', left: '200px', width: '825px' }}>
@@ -46,17 +46,17 @@ export default class Navbar extends React.Component {
             </ul>
           </div>
 
-          <a data-activates="nav-mobile"
-            className="button-collapse"
-            style={{ position: 'absolute', top: '0px', left: '15px' }}
-            onClick={(e)=>{e.preventDefault(); this.toggleNav();}}>
-              <i className="material-icons">menu</i>
+          <a  data-activates="nav-mobile"
+              className="button-collapse mobile-nav-style"
+              style={{ position: 'absolute' }}
+              onClick={(e)=>{e.preventDefault(); this.toggleNav();}}>
+                <i className="material-icons">menu</i>
           </a>
 
           <SideNav  showNav={ this.state.showNav }
                     onHideNav={ ()=>{this.setState({showNav: false});} }
-                    title={<div className="black"><img src={"\." + assets('./images/logo_main.png')} alt="hackUSU" style={{ height: '30px' }}/></div>}
-                    titleStyle={{ backgroundColor: '#000' }}
+                    title={<div className="white"><img src={"\." + assets('./images/logo_main.png')} alt="hackUSU" style={{ margin: 'auto', width: '300px' }}/></div>}
+                    titleStyle={{ backgroundColor: '#FFF' }}
                     itemStyle={{ width: '100%', padding: '0px' }}
                     items={this.state.sideNavitems} />
         </nav>
