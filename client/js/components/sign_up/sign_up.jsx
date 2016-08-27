@@ -17,20 +17,23 @@ export default class SignUp extends React.Component {
         bottom: '0',
         top: '0',
         border: '0',
+        width: '100%',
+        height: '100%',
+        overflow: 'hidden'
       }
     }
 
     return(
       <div>
         <Navbar />
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdo5KwbKn5ElYTeFvMBj25YvgJxSKZQEavavRVxt7zyP9ji5w/viewform?embedded=true"
-                width="100%"
-                height="600px"
-                frameborder="0"
-                marginheight="0"
-                marginwidth="0">
-                  Loading...
-        </iframe>
+        <div style={ styles.iframe }>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdo5KwbKn5ElYTeFvMBj25YvgJxSKZQEavavRVxt7zyP9ji5w/viewform?embedded=true"
+                  width="100%"
+                  height="100%"
+                  frameborder="0">
+                    Loading...
+          </iframe>
+        </div>
       </div>
     );
   }
