@@ -24,4 +24,6 @@ s3_website.yml
 
 node_modules
 npm-debug.log
-build/dev/
+build/
+build/prod
+build/dev
