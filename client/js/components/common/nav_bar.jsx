@@ -11,11 +11,11 @@ export default class Navbar extends React.Component {
     super(props)
 
     var sideNavitems = [
-      <Link className="top-nav-item text-white" to={`/`}>Home</Link>,
-      <Link className="top-nav-item text-white" to={`/signup`}>Events</Link>,
-      <Link className="top-nav-item text-white" to={`/signup`}> Projects</Link>,
-      <Link className="top-nav-item text-white" to={`/signup`}>Sponsors</Link>,
-      <Link className="top-nav-item text-white" to={`/signup`}>About</Link>,
+      // <Link className="top-nav-item text-white" to={`/`}>Home</Link>,
+      // <Link className="top-nav-item text-white" to={`/signup`}>Events</Link>,
+      // <Link className="top-nav-item text-white" to={`/signup`}> Projects</Link>,
+      // <Link className="top-nav-item text-white" to={`/signup`}>Sponsors</Link>,
+      // <Link className="top-nav-item text-white" to={`/signup`}>About</Link>,
       <Link className="top-nav-item text-white" to={`/signup`}>Join</Link>
     ]
 
@@ -31,17 +31,20 @@ export default class Navbar extends React.Component {
 
   render(){
 
+// NOTE: this section needs to back on line 47 when we've finished thos pages
+    // <li><Link className="top-nav-item text-white" to={`/`}>Home</Link></li>
+    // <li><Link className="top-nav-item text-white" to={`/signup`}>Events</Link></li>
+    // <li><Link className="top-nav-item text-white" to={`/signup`}>Projects</Link></li>
+    // <li><Link className="top-nav-item text-white" to={`/signup`}>Sponsors</Link></li>
+    // <li><Link className="top-nav-item text-white" to={`/signup`}>About</Link></li>
+
     return (
       <div className="navbar-fixed" style={{ top: '0px', position: 'absolute' }}>
         <nav className="white" role="navigation">
           <div className="nav-wrapper container">
             <a href="#" className="brand-logo"><img src={"\." + assets('./images/logo_main.png')} alt="hackUSU" style={{ height: '55px', paddingTop: '10px' }}/></a>
             <ul className="right hide-on-med-and-down" style={{ position:'absolute', left: '200px', width: '825px' }}>
-              <li><Link className="top-nav-item text-white" to={`/`}>Home</Link></li>
-              <li><Link className="top-nav-item text-white" to={`/signup`}>Events</Link></li>
-              <li><Link className="top-nav-item text-white" to={`/signup`}>Projects</Link></li>
-              <li><Link className="top-nav-item text-white" to={`/signup`}>Sponsors</Link></li>
-              <li><Link className="top-nav-item text-white" to={`/signup`}>About</Link></li>
+              
               <li><Link className="top-nav-item text-white" to={`/signup`}>Join</Link></li>
             </ul>
           </div>
